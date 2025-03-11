@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <title>Linha do Tempo</title>
 </head>
 
 <body>
 
-    <div class="transparent_div_caixa">
+    <div class="bloco_principal">
         <!-- Input e botão de pesquisa -->
         <div>
-            <input type="text" placeholder="Cidade">
-            <button>
-                <img class="lupa-image" src="https://th.bing.com/th/id/OIP.V0U8g3zT403jw4nkYN3a6gHaFB?rs=1&pid=ImgDetMain"
+            <input class="campo-cidade" type="text" placeholder="Rio de Janeiro,Br">
+            <button onclick="cliqueNobotao()">
+                <img class="lupa-image" src="https://www.svgrepo.com/show/488200/find.svg"
                     alt="Ícone de pesquisa">
             </button>
         </div>
 
         <!-- Informações de tempo -->
-        <div class="city-text">
-            <h2>Tempo em Rio de Janeiro</h2>
+        <div class="bloco1_cidade">
+            <h2 class="cidade">Tempo em Rio de Janeiro</h2>
             <p class="text-time">28°C</p>
 
 
             <!-- Informações de nuvem -->
-
-            <img>☁️
+        <div class="bloco2_nuvens">
+            <img class="nuvem" src="https://openweathermap.org/img/wn/04n.png">
             <p class="texto-image-nuvem">Nuvens Dispersas</p>
 
-            <!-- Informações de umidade -->
-
-            <p class="text-umidade">Umidade: 70%</p>
+        </div>
+                    <!-- Informações de umidade -->
+                    <p class="text-umidade">Umidade: 70%</p>
         </div>
     </div>
 
